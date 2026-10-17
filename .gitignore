@@ -1,0 +1,5 @@
+# PyCharm / IntelliJ IDEA project settings
+.idea/
+
+# Graphify generated knowledge graph and working files
+graphify-out/
