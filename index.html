@@ -2,9 +2,9 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>LQCLDS Apps – Xiaomi WiFi Importer & Stickers</title>
+  <title>LQCLDS Apps – PoliGame, Xiaomi WiFi Importer & Stickers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portafolio de aplicaciones de LQCLDS: Xiaomi WiFi Importer y packs de stickers para WhatsApp. Desarrolladas como hobby por un profesional en analítica y ciencia de datos." />
+  <meta name="description" content="Portafolio de aplicaciones de LQCLDS: PoliGame, Xiaomi WiFi Importer y packs de stickers para WhatsApp. Proyectos Android creados como hobby." />
   <style>
     :root {
       --bg: #0f172a;
@@ -190,7 +190,7 @@
 
     @media (min-width: 720px) {
       .apps-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
 
@@ -220,6 +220,12 @@
       background: radial-gradient(circle at top left, rgba(52, 211, 153, 0.22), transparent 55%),
                   radial-gradient(circle at bottom right, rgba(34, 197, 94, 0.78), rgba(15, 23, 42, 0.95));
       border-color: rgba(52, 211, 153, 0.7);
+    }
+
+    .app-card.game {
+      background: radial-gradient(circle at top left, rgba(251, 191, 36, 0.28), transparent 55%),
+                  radial-gradient(circle at bottom right, rgba(234, 88, 12, 0.82), rgba(15, 23, 42, 0.95));
+      border-color: rgba(251, 146, 60, 0.75);
     }
 
     .app-chip {
@@ -367,7 +373,7 @@
             </div>
             <div class="pill-group">
               <div class="pill"><strong>Rol profesional:</strong> Analítica de datos & Ciencia de datos</div>
-              <div class="pill"><strong>Apps:</strong> Stickers & utilidades Android</div>
+              <div class="pill"><strong>Apps:</strong> Juegos, stickers & utilidades Android</div>
             </div>
           </div>
           <p class="intro-text">
@@ -384,6 +390,33 @@
           </div>
 
           <div class="apps-grid">
+
+            <!-- PoliGame -->
+            <article class="app-card game">
+              <div class="app-chip">
+                <span class="chip-dot"></span>
+                Juego Android
+              </div>
+              <h3 class="app-title">
+                PoliGame
+                <span class="tagline">Politécnico en apuros</span>
+              </h3>
+              <p class="app-desc">
+                Elige tu personaje, juega tus partidas y conserva tus puntuaciones directamente en el dispositivo.
+                Una experiencia Android creada con GDevelop.
+              </p>
+              <div class="app-meta">
+                No requiere registro de cuenta e incluye anuncios y vídeos recompensados mediante Google AdMob.
+              </div>
+              <div class="app-actions">
+                <div class="app-links">
+                  <a class="btn-link" href="poligame-privacy-policy.html" target="_blank" rel="noopener noreferrer">
+                    Política de privacidad <span class="arrow">↗</span>
+                  </a>
+                </div>
+                <span class="app-note">Juego Android</span>
+              </div>
+            </article>
 
             <!-- Stickers por LQCLDS -->
             <article class="app-card stickers-1">
