@@ -2,11 +2,11 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>LQCLDS Apps – Bitácora de Vehículo, Xiaomi WiFi Importer & Stickers</title>
+  <title>LQCLDS Apps | Juegos y utilidades Android</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portafolio de aplicaciones de LQCLDS: Bitácora de Vehículo, Xiaomi WiFi Importer y packs de stickers para WhatsApp. Proyectos Android creados como hobby." />
+  <meta name="description" content="Aplicaciones Android de LQCLDS: PoliGame, Bitácora de Vehículo, Xiaomi WiFi Importer y packs de stickers para WhatsApp." />
+  <meta name="theme-color" content="#0f172a" />
   <link rel="icon" type="image/jpeg" sizes="64x64" href="favicon.jpg" />
-  <meta name="description" content="Portafolio de aplicaciones de LQCLDS: PoliGame, Xiaomi WiFi Importer y packs de stickers para WhatsApp. Proyectos Android creados como hobby." />
   <style>
     :root {
       --bg: #0f172a;
@@ -21,7 +21,7 @@
       --shadow-soft: 0 24px 60px rgba(15, 23, 42, 0.75);
       --radius-lg: 20px;
       --radius-pill: 999px;
-      --max-width: 980px;
+      --max-width: 1040px;
     }
 
     * {
@@ -41,6 +41,7 @@
       line-height: 1.6;
       display: flex;
       justify-content: center;
+      min-height: 100%;
       padding: 32px 16px 40px;
     }
 
@@ -132,6 +133,13 @@
       gap: 8px;
     }
 
+    @media (min-width: 720px) {
+      .pill-group {
+        justify-content: flex-end;
+        max-width: 23rem;
+      }
+    }
+
     .pill {
       padding: 4px 12px;
       border-radius: var(--radius-pill);
@@ -161,6 +169,7 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
+      flex-wrap: wrap;
       gap: 10px;
       margin-bottom: 14px;
     }
@@ -195,10 +204,21 @@
       background: radial-gradient(circle at top left, rgba(15, 118, 245, 0.22), transparent 55%),
                   radial-gradient(circle at bottom right, rgba(30, 64, 175, 0.75), rgba(15, 23, 42, 0.9));
       border-radius: var(--radius-lg);
-      padding: 14px 14px 16px;
+      padding: 18px;
       border: 1px solid rgba(129, 140, 248, 0.45);
       position: relative;
       overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .app-card:hover,
+    .app-card:focus-within {
+      transform: translateY(-2px);
+      border-color: rgba(226, 232, 240, 0.72);
+      box-shadow: 0 16px 32px rgba(2, 6, 23, 0.28);
     }
 
     .app-card.stickers-1 {
@@ -220,9 +240,9 @@
     }
 
     .app-card.game {
-      background: radial-gradient(circle at top left, rgba(251, 191, 36, 0.28), transparent 55%),
-                  radial-gradient(circle at bottom right, rgba(234, 88, 12, 0.82), rgba(15, 23, 42, 0.95));
-      border-color: rgba(251, 146, 60, 0.75);
+      background: radial-gradient(circle at top left, rgba(251, 191, 36, 0.26), transparent 52%),
+                  radial-gradient(circle at bottom right, rgba(225, 29, 72, 0.78), rgba(15, 23, 42, 0.95));
+      border-color: rgba(251, 113, 133, 0.72);
     }
 
     .app-card.vehicle {
@@ -269,7 +289,6 @@
       color: #e5e7eb;
       opacity: 0.9;
       margin-bottom: 10px;
-      min-height: 3.4em;
     }
 
     .app-meta {
@@ -302,7 +321,8 @@
       justify-content: space-between;
       align-items: center;
       gap: 8px;
-      margin-top: 6px;
+      margin-top: auto;
+      padding-top: 8px;
       font-size: 0.8rem;
     }
 
@@ -315,8 +335,8 @@
     .btn-link {
       padding: 4px 9px;
       border-radius: 999px;
-      border: 1px solid rgba(15, 23, 42, 0.1);
-      background: rgba(15, 23, 42, 0.12);
+      border: 1px solid rgba(226, 232, 240, 0.22);
+      background: rgba(15, 23, 42, 0.42);
       color: #f9fafb;
       text-decoration: none;
       font-size: 0.78rem;
@@ -327,7 +347,7 @@
     }
 
     .btn-link:hover {
-      background: rgba(15, 23, 42, 0.28);
+      background: rgba(15, 23, 42, 0.68);
       transform: translateY(-1px);
       border-color: rgba(15, 23, 42, 0.35);
     }
@@ -344,7 +364,61 @@
 
     .app-note {
       font-size: 0.7rem;
-      color: rgba(15, 23, 42, 0.12);
+      color: rgba(226, 232, 240, 0.72);
+      text-align: right;
+    }
+
+    @media (min-width: 720px) {
+      .apps-grid > .app-card:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+      }
+
+      .apps-grid > .app-card:last-child:nth-child(odd) .app-desc,
+      .apps-grid > .app-card:last-child:nth-child(odd) .app-meta {
+        max-width: 46rem;
+      }
+    }
+
+    @media (max-width: 520px) {
+      body {
+        padding: 16px 10px 28px;
+      }
+
+      .card {
+        padding: 22px 16px 20px;
+      }
+
+      .brand-block {
+        align-items: flex-start;
+      }
+
+      .brand-logo {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+      }
+
+      .app-actions {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .app-note {
+        text-align: left;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .app-card,
+      .btn-link {
+        transition: none;
+      }
+
+      .app-card:hover,
+      .app-card:focus-within,
+      .btn-link:hover {
+        transform: none;
+      }
     }
 
     /* Footer */
@@ -381,8 +455,7 @@
             </div>
             <div class="pill-group">
               <div class="pill"><strong>Rol profesional:</strong> Analítica de datos & Ciencia de datos</div>
-              <div class="pill"><strong>Apps:</strong> Juegos, stickers & utilidades Android</div>
-              <div class="pill"><strong>Apps:</strong> Vehículos, stickers & utilidades Android</div>
+              <div class="pill"><strong>5 apps:</strong> Juegos, stickers y utilidades Android</div>
             </div>
           </div>
           <p class="intro-text">
@@ -392,10 +465,11 @@
           </p>
         </header>
 
-        <section class="apps-section">
+        <main>
+        <section class="apps-section" aria-labelledby="apps-title">
           <div class="apps-header">
-            <h2>APLICACIONES</h2>
-            <span class="sub">Android &middot; Proyectos personales</span>
+            <h2 id="apps-title">Aplicaciones</h2>
+            <span class="sub">5 proyectos &middot; Android</span>
           </div>
 
           <div class="apps-grid">
@@ -420,7 +494,7 @@
               <div class="app-actions">
                 <div class="app-links">
                   <a class="btn-link" href="poligame-privacy-policy.html" target="_blank" rel="noopener noreferrer">
-                    Política de privacidad <span class="arrow">↗</span>
+                    Política de privacidad <span class="arrow" aria-hidden="true">↗</span>
                   </a>
                 </div>
                 <span class="app-note">Juego Android</span>
@@ -454,10 +528,10 @@
               <div class="app-actions">
                 <div class="app-links">
                   <a class="btn-link" href="https://play.google.com/store/apps/details?id=com.lqclds.carstatics" target="_blank" rel="noopener noreferrer">
-                    Ver en Google Play <span class="arrow">↗</span>
+                    Ver en Google Play <span class="arrow" aria-hidden="true">↗</span>
                   </a>
                   <a class="btn-link" href="vehicle-logbook-privacy-policy.html" target="_blank" rel="noopener noreferrer">
-                    Política de privacidad <span class="arrow">↗</span>
+                    Política de privacidad <span class="arrow" aria-hidden="true">↗</span>
                   </a>
                 </div>
                 <span class="app-note">Bitácora local</span>
@@ -483,9 +557,8 @@
               </div>
               <div class="app-actions">
                 <div class="app-links">
-                  <!-- Reemplaza # con el enlace real de Google Play si ya lo tienes -->
                   <a class="btn-link" href="https://play.google.com/store/apps/details?id=com.lqcldsstickerapp" target="_blank" rel="noopener noreferrer">
-                    Ver en Google Play <span class="arrow">↗</span>
+                    Ver en Google Play <span class="arrow" aria-hidden="true">↗</span>
                   </a>
                 </div>
                 <span class="app-note">Stickers para WhatsApp</span>
@@ -511,9 +584,8 @@
               </div>
               <div class="app-actions">
                 <div class="app-links">
-                  <!-- Reemplaza # con el enlace real de Google Play si ya lo tienes -->
                   <a class="btn-link" href="https://play.google.com/store/apps/details?id=com.lqcldsstickerapp2RL" target="_blank" rel="noopener noreferrer">
-                    Ver en Google Play <span class="arrow">↗</span>
+                    Ver en Google Play <span class="arrow" aria-hidden="true">↗</span>
                   </a>
                 </div>
                 <span class="app-note">Stickers universitarios</span>
@@ -546,13 +618,11 @@
               </div>
               <div class="app-actions">
                 <div class="app-links">
-                  <!-- Reemplaza # con el enlace real de Google Play -->
                   <a class="btn-link" href="https://play.google.com/store/apps/details?id=com.lqclds.xiaomiwifiimporter" target="_blank" rel="noopener noreferrer">
-                    Ver en Google Play <span class="arrow">↗</span>
+                    Ver en Google Play <span class="arrow" aria-hidden="true">↗</span>
                   </a>
-                  <!-- Reemplaza el href con la ruta real a tu política de privacidad en GitHub Pages -->
                   <a class="btn-link" href="xiaomiwifiimporter-privacy-policy.html" target="_blank" rel="noopener noreferrer">
-                    Política de privacidad <span class="arrow">↗</span>
+                    Política de privacidad <span class="arrow" aria-hidden="true">↗</span>
                   </a>
                 </div>
                 <span class="app-note">Importador de redes WiFi</span>
@@ -561,6 +631,7 @@
 
           </div>
         </section>
+        </main>
       </div>
     </div>
 
@@ -570,8 +641,7 @@
         Desarrollo de aplicaciones como hobby · Trabajo principal en
         <strong>analítica de datos</strong> y <strong>ciencia de datos</strong>.
       </p>
-      <!-- Opcional: añade un correo o enlace a LinkedIn/GitHub -->
-      <!-- <p>Contacto: <a href="mailto:tu_correo@example.com">tu_correo@example.com</a></p> -->
+      <p>Contacto: <a href="mailto:loquecallamoslosdesegunda@gmail.com">loquecallamoslosdesegunda@gmail.com</a></p>
     </footer>
   </div>
 </body>
