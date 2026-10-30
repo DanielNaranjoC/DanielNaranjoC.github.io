@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Descripción y política de privacidad de Tab Collections, la extensión de Microsoft Edge de Jonathan Daniel Naranjo Carranza para organizar pestañas en colecciones locales.">
+  <meta name="referrer" content="no-referrer">
+  <title>Tab Collections — Descripción y privacidad</title>
+  <link rel="icon" type="image/jpeg" href="favicon.jpg">
+  <style>
+:root {
+  color-scheme: light;
+  font: 17px/1.75 system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #202c43;
+  background: #f4f6fb;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.brand, main, footer { width: min(100% - 40px, 860px); margin-inline: auto; }
+.brand { display: flex; align-items: center; gap: 18px; padding: 36px 0 26px; color: #203cbe; font-size: 1.4rem; font-weight: 750; }
+.brand img { flex: 0 0 64px; }
+.brand small { display: block; font-size: .8rem; font-weight: 450; color: #52627b; }
+main { background: #fff; border: 1px solid #e1e7f2; border-radius: 16px; padding: clamp(22px, 5vw, 52px); }
+h1 { margin: 0 0 24px; font-size: clamp(1.7rem, 4vw, 2.3rem); line-height: 1.22; letter-spacing: -.025em; color: #14234a; }
+h2 { font-size: 1.2rem; line-height: 1.4; margin: 36px 0 12px; padding-top: 24px; border-top: 1px solid #e5eaf4; color: #203c94; }
+p { margin: 0 0 16px; }
+li { margin: 8px 0; }
+ul { padding-left: 22px; }
+a { color: #2348cf; text-underline-offset: 3px; overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid #0db8bd; outline-offset: 4px; border-radius: 2px; }
+footer { padding: 24px 0 36px; color: #5a6881; font-size: .82rem; }
+@media print {
+  :root { color: #000; background: #fff; font-size: 11pt; }
+  .brand, main, footer { width: 100%; }
+  .brand { padding: 0 0 20px; }
+  main { border: 0; padding: 0; }
+  h2 { break-after: avoid; }
+  p, li { orphans: 3; widows: 3; }
+}
+
+.back-link { display: inline-block; margin-top: 18px; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <header class="brand"><img src="tab-collections-logo.png" width="64" height="64" alt=""><span>Tab Collections<small>Microsoft Edge · Colecciones locales</small></span></header>
+  <main><h1>Tab Collections — Política de privacidad</h1>
+<p>Última actualización: 30 de octubre de 2026.</p>
+<p>Responsable de la extensión: <strong>Jonathan Daniel Naranjo Carranza</strong>.</p>
+<p>Contacto de privacidad y soporte: <a href="mailto:jonathan.daniel.naranjo@gmail.com">jonathan.daniel.naranjo@gmail.com</a>.</p>
+<h2>1. Descripción de la extensión</h2>
+<p>Tab Collections es una extensión para Microsoft Edge que permite guardar, organizar y recuperar pestañas mediante colecciones con nombre. Puedes guardar todas o algunas pestañas de una ventana, agregar una o varias desde el menú de clic derecho, elegir una colección existente, renombrarla o crear una nueva.</p>
+<p>La extensión permite buscar, ordenar, consultar y eliminar colecciones; restaurar todas o algunas de sus pestañas en la ventana actual o en una nueva; conservar el orden, las pestañas fijadas y los grupos compatibles; evitar URL duplicadas; y exportar o importar colecciones mediante archivos JSON. El cierre de pestañas después de guardar se solicita por separado. La conversión de una ventana en un Área de trabajo de Edge, cuando se ofrece, se realiza manualmente.</p>
+<p>Su finalidad es organizar las pestañas que eliges y permitir que vuelvas a abrirlas. Funciona con almacenamiento local y no requiere una cuenta propia ni un servidor del desarrollador. La versión 1.1.0 requiere Microsoft Edge basado en Chromium 150 o superior.</p>
+<h2>2. Datos que consulta y guarda</h2>
+<p>Al usar las funciones de guardado o restauración, la extensión consulta datos de las pestañas de la ventana correspondiente para mostrar la selección, evitar duplicados y realizar la operación solicitada. Al guardar una colección, conserva:</p>
+<ul><li>Los títulos y las URL de las pestañas elegidas, incluidas las rutas y los parámetros de sus enlaces.</li><li>El orden de las pestañas, su estado fijado y un indicador de si estaban activas.</li><li>Los nombres, colores, orden y estado contraído de los grupos, cuando están disponibles.</li><li>El nombre y un identificador de cada colección, sus fechas de creación y modificación, el tipo general de navegador y la versión del formato de datos.</li><li>La preferencia local para ocultar la sugerencia de conversión manual a un Área de trabajo de Edge.</li></ul>
+<p>Para el menú «Agregar a colección…», guarda temporalmente una copia de las pestañas seleccionadas y sus grupos, un identificador de la selección, su fecha y, si ocurre un fallo, un mensaje de error. Puede mostrar errores en la consola local del navegador; no los envía al desarrollador.</p>
+<p>La extensión no lee el contenido de las páginas, formularios, cookies, contraseñas guardadas ni el historial general de navegación. No realiza seguimiento continuo de las páginas que visitas. Los títulos y las URL sí pueden incluir información personal o valores sensibles; revisa los enlaces que guardas o exportas. Se rechazan las URL que incluyen usuario y contraseña de forma explícita.</p>
+<h2>3. Para qué se utilizan los datos</h2>
+<p>Los datos se utilizan para mostrar y organizar tus colecciones, añadir y renombrar elementos, restaurar pestañas y grupos, comparar URL para evitar duplicados y generar o leer los archivos que tú decides exportar o importar.</p>
+<p>La extensión no utiliza estos datos para publicidad, perfiles comerciales, entrenamiento de modelos, analítica ni telemetría. No incorpora servicios de seguimiento.</p>
+<h2>4. Dónde se guardan y con quién se comparten</h2>
+<p>Las colecciones y la preferencia se guardan en el almacenamiento local de la extensión dentro de tu perfil de Microsoft Edge. Las selecciones temporales del menú se mantienen en la memoria de sesión de la extensión.</p>
+<p>La extensión no envía tus colecciones al desarrollador ni a servidores externos, no las vende, no las comparte con terceros y no incorpora sincronización en la nube. El responsable no tiene acceso remoto a las colecciones almacenadas en tu navegador.</p>
+<p>Al restaurar una pestaña, Microsoft Edge se conecta al sitio que tú solicitas abrir; ese sitio trata la navegación conforme a su propia política. La tienda de extensiones, el navegador y el proveedor que aloje esta política tienen sus propios servicios y políticas, independientes de las colecciones locales de Tab Collections.</p>
+<h2>5. Permisos de Microsoft Edge</h2>
+<ul><li><strong>storage:</strong> guardar colecciones y preferencias localmente y mantener las selecciones temporales del menú.</li><li><strong>tabs:</strong> consultar títulos y URL, identificar las pestañas elegidas y abrir, activar o cerrar pestañas como parte de las acciones que solicitas.</li><li><strong>tabGroups:</strong> consultar y reconstruir los metadatos de los grupos de pestañas compatibles.</li><li><strong>contextMenus:</strong> mostrar la opción «Agregar a colección…» en el menú contextual.</li></ul>
+<p>La extensión no solicita acceso al contenido de todos los sitios ni incorpora código alojado remotamente.</p>
+<h2>6. Conservación y eliminación</h2>
+<p>Las colecciones permanecen guardadas hasta que las eliminas desde la administración, se reemplazan mediante una importación que confirmas o se eliminan tras una restauración correcta si elegiste esa opción. La preferencia permanece en el almacenamiento local hasta que se borran los datos de la extensión.</p>
+<p>Las selecciones temporales caducan al cabo de una hora. Se intenta eliminarlas al guardar o cancelar; los registros caducados se limpian al volver a usar el flujo de agregar. Cerrar una ventana con su botón de cierre puede dejar su selección en memoria hasta esa limpieza. El navegador vacía la memoria de sesión al reiniciarse o al desactivar, recargar o actualizar la extensión. La caducidad se comprueba al cargar una selección; una selección ya abierta en pantalla puede seguir disponible mientras esa ventana permanezca abierta.</p>
+<p>Microsoft Edge elimina el almacenamiento local de la extensión al desinstalarla. Esto no elimina los archivos JSON que hayas exportado ni las copias que conserves por tu cuenta.</p>
+<h2>7. Tu control sobre la información</h2>
+<p>Puedes consultar tus colecciones y sus pestañas desde «Administrar colecciones», cambiar sus nombres, eliminarlas y exportarlas a JSON. Puedes dejar de utilizar la extensión desactivándola o desinstalándola desde la administración de extensiones de Microsoft Edge.</p>
+<p>Los archivos JSON se crean y se leen localmente. Si decides compartirlos, sus destinatarios podrán acceder a los títulos y las URL que contienen. Elimina por separado las exportaciones o copias que ya no necesites.</p>
+<p>Puedes contactar con el responsable para consultas sobre privacidad o para ejercer los derechos que resulten aplicables a tu situación. Como las colecciones se guardan en tu dispositivo, su consulta o eliminación se realiza desde tu navegador.</p>
+<h2>8. Protección y comunicaciones de soporte</h2>
+<p>La extensión utiliza los mecanismos de almacenamiento y aislamiento de Microsoft Edge; no añade un cifrado propio a las colecciones ni a las exportaciones JSON. Su protección también depende de la seguridad de tu dispositivo, tu perfil y las copias que conserves.</p>
+<p>Si escribes al correo de contacto, el responsable recibirá tu dirección y la información o archivos que incluyas voluntariamente, y los utilizará para atender tu consulta. La extensión no envía esos mensajes automáticamente. No es necesario adjuntar colecciones privadas, contraseñas ni otros datos sensibles para solicitar orientación.</p>
+<h2>9. Cambios en esta política</h2>
+<p>Esta política se actualizará si cambia el funcionamiento de la extensión o el tratamiento de datos. La fecha de actualización figura al principio del documento. Las nuevas prácticas se describirán antes de aplicarse cuando corresponda.</p>
+<h2>10. Contacto</h2>
+<p><strong>Jonathan Daniel Naranjo Carranza</strong> es el responsable de Tab Collections. Para consultas sobre esta política, escribe a <a href="mailto:jonathan.daniel.naranjo@gmail.com">jonathan.daniel.naranjo@gmail.com</a>.</p></main>
+  <footer>Tab Collections · Jonathan Daniel Naranjo Carranza<br><a class="back-link" href="index.html">← Volver a las aplicaciones</a></footer>
+</body>
+</html>
